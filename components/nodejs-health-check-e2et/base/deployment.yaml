@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: nodejs-health-check-e2et
     spec:
       containers:
-      - image: quay.io/redhat-appstudio-qe/test-images-protected:UJZT1-nodejs-health-check-e2et
+      - image: quay.io/redhat-appstudio-qe/test-images-protected@sha256:aaa8e5cc36e86dc71cd90f43bd09e0403e6f16605e447a545cf0dd92c15b8cc3
         name: my-nodejs
         ports:
         - containerPort: 3001
