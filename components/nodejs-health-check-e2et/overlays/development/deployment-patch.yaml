@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: nodejs-health-check-e2et
+  namespace: e2e-demos-hxua-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images-protected@sha256:aaa8e5cc36e86dc71cd90f43bd09e0403e6f16605e447a545cf0dd92c15b8cc3
+        name: my-nodejs
+        resources: {}
+status: {}
